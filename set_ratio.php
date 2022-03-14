@@ -8,7 +8,7 @@ $image = "/Tinder like clone/saturn_high.png";
 $max_width = $_SESSION['height'] / 2;
 $max_height = $_SESSION['height'];
 
-$img = getimagesize("../Tinder like clone/saturn_high.png");
+$img = getimagesize("/saturn_high.png");
 var_dump($img);
 // Get current dimensions
 $old_width  = $img[0];

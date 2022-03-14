@@ -5,7 +5,7 @@
 */
 session_start();
 include('get_image.php');
-$con = mysqli_connect("localhost","root","yrk27242621","mysql");
+$con = mysqli_connect("localhost","root","","mysql");
 
 $action = mysqli_real_escape_string($con, htmlspecialchars($_GET['vote']));
 $height = htmlspecialchars($_GET['height']);

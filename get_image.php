@@ -7,7 +7,7 @@ if (!isset($_SESSION['id'])) {
 function scale_my_image($height, $width)
 {
 
-    $con = mysqli_connect("localhost", "root", "yrk27242621", "mysql");
+    $con = mysqli_connect("localhost", "root", "", "mysql");
     $query = "SELECT * FROM showImages WHERE id='" . $_SESSION['id'] . "'";
 
     $res = mysqli_query($con, $query);
